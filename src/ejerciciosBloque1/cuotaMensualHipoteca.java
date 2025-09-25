@@ -10,25 +10,25 @@ public class cuotaMensualHipoteca {
 		
 		//Datos solicitados al ususario
 		String stringEuribor = JOptionPane.showInputDialog("Introduzca el valor del Euribor: ");
-		float Euribor = Float.parseFloat(stringEuribor);
+		float euribor = Float.parseFloat(stringEuribor);
 		
 		String stringDiferencial = JOptionPane.showInputDialog("Introduzca el valor del diferencial: ");
-		float Diferencial = Float.parseFloat(stringDiferencial);
+		float diferencial = Float.parseFloat(stringDiferencial);
 		
 		String stringCapital = JOptionPane.showInputDialog("Introduzca el valor del capital: ");
-		float Capital = Float.parseFloat(stringCapital);
+		float capital = Float.parseFloat(stringCapital);
 		
 		String stringPlazosMensuales = JOptionPane.showInputDialog("Introduzca el número de plazos mensuales: ");
-		int PlazosMensuales = Integer.parseInt(stringPlazosMensuales);
+		int plazosMensuales = Integer.parseInt(stringPlazosMensuales);
 		
 		//Interés Anual
-		float InteresAnual = (Euribor + Diferencial);
+		float interesAnual = (euribor + diferencial);
 		
 		//Interés Mensual
-		float InteresMensual = ((InteresAnual / 12f) / 100f);
+		float InteresMensual = ((interesAnual / 12f) / 100f);
 		
 		//Cuota Mensual
-		float CuotaMensual = (Capital * ((InteresMensual * (float)Math.pow(1f + InteresMensual, PlazosMensuales)) / ((float)Math.pow(1f + InteresMensual, PlazosMensuales) - 1f)));
+		float CuotaMensual = (capital * ((InteresMensual * (float)Math.pow(1f + InteresMensual, plazosMensuales)) / ((float)Math.pow(1f + InteresMensual, plazosMensuales) - 1f)));
 		
 		System.out.println("Importe de cuota mensual: " + CuotaMensual);
 	}
