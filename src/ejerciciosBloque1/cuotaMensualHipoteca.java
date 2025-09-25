@@ -28,9 +28,9 @@ public class cuotaMensualHipoteca {
 		float interesMensual = ((interesAnual / 12f) / 100f);
 		
 		//Cuota Mensual
-		float CuotaMensual = (capital * ((interesMensual * (float)Math.pow(1f + interesMensual, plazosMensuales)) / ((float)Math.pow(1f + interesMensual, plazosMensuales) - 1f)));
+		float cuotaMensual = (capital * ((interesMensual * (float)Math.pow(1f + interesMensual, plazosMensuales)) / ((float)Math.pow(1f + interesMensual, plazosMensuales) - 1f)));
 		
-		System.out.println("Importe de cuota mensual: " + CuotaMensual);
+		System.out.println("Importe de cuota mensual: " + cuotaMensual);
 	}
 
 }
