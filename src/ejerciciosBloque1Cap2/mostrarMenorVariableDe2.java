@@ -15,10 +15,10 @@ public class mostrarMenorVariableDe2 {
 			System.out.println("El menor es: " + n1);
 		}
 		else {
-			if (n2 >= n1) {
 				System.out.println("El menor es " + n2);
-			}
 		}
+		
+		sc.close();
 	}
 
 }
