@@ -15,10 +15,9 @@ public class mostrarMayorVariableDe2 {
 			System.out.println("El mayor es: " + n1);
 		}
 		else {
-			if (n2 >= n1) {
 				System.out.println("El mayor es " + n2);
-			}
 		}
+		sc.close();
 	}
 		
 }
