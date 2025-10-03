@@ -2,7 +2,7 @@ package capitulo2;
 
 import java.util.Scanner;
 
-public class mostrarmenorDe5Variables {
+public class MostrarmenorDe5Variables {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

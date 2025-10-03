@@ -2,7 +2,7 @@ package capitulo2;
 
 import java.util.Scanner;
 
-public class mostrarMayorYMenorDe5Variables {
+public class MostrarMayorDe5Variables {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -33,33 +33,11 @@ public class mostrarMayorYMenorDe5Variables {
 			mayor = n5;
 		}
 		
-		//Creamos la variable menor para ir cambiando al numero menor que pide
-		
-		int menor = n1;
-				
-		if (n2 <= menor) {
-			menor = n2;
-				}
-		if (n3 <= menor) {
-			menor = n3;
-				}
-		if (n4 <= menor) {
-			menor = n4;
-				}
-		if (n5 <= menor) {
-			menor = n5;
-				}
-		
 		//Mostramos el numero mayor
 		
 		System.out.println("El mayor es: " + mayor);
 		
-		//Mostramos el numero menor
-		
-		System.out.println("El menor es: " + menor);
-		
 		sc.close();
-
 	}
 
 }
