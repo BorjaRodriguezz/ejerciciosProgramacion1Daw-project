@@ -1,4 +1,4 @@
-package ejerciciosBloque1Cap1;
+package capitulo1;
 
 import javax.swing.JOptionPane;
 

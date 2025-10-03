@@ -1,4 +1,4 @@
-package ejerciciosBloque1Cap2;
+package capitulo2;
 
 import java.util.Scanner;
 
