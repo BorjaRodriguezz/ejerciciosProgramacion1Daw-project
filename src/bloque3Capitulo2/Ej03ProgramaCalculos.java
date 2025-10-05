@@ -13,13 +13,13 @@ public class Ej03ProgramaCalculos {
 		//Menu principal
 		
 		System.out.println("\n=== CALCULADORA DE FIGURAS ===");
-		System.out.println("1. Hipotenusa (triangulo).");
+		System.out.println("\n1. Hipotenusa (triangulo).");
 		System.out.println("2. Superficie (circunferencia).");
 		System.out.println("3. Perimetro (circunferencia).");
 		System.out.println("4. Area (rectangulo).");
 		System.out.println("5. Area (triangulo).");
 		System.out.println("6. Salir.");
-		System.out.println("Elige una opcion: ");
+		System.out.println("\nElige una opcion: ");
 		
 		opcion = sc.nextInt();
 		

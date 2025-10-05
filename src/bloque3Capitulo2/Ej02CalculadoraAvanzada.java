@@ -12,11 +12,11 @@ public class Ej02CalculadoraAvanzada {
 		//Menu de calculadora
 		
 		System.out.println("\n=== CALCULADORA AVANZADA ===");
-		System.out.println("1. Raiz cuadrada");
+		System.out.println("\n1. Raiz cuadrada");
 		System.out.println("2. Potencia");
 		System.out.println("3. Modulo de la division");
 		System.out.println("4. Salir");
-		System.out.println("Elige una opcion: ");
+		System.out.println("\nElige una opcion: ");
 		opcion = sc.nextInt();
 		
 		switch (opcion) {
