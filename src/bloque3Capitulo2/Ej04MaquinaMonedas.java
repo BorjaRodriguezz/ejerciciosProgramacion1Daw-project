@@ -13,7 +13,7 @@ public class Ej04MaquinaMonedas {
 		
 		//Compra de producto
 		
-		System.out.println("Introduce el valor del producto: ");
+		System.out.println("\nIntroduce el valor del producto: ");
 		int valor = sc.nextInt();
 		System.out.println("Introduce el pago: ");
 		int pago = sc.nextInt();
