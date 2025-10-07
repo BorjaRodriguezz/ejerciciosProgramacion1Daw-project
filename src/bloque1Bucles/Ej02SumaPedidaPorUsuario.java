@@ -11,7 +11,7 @@ public class Ej02SumaPedidaPorUsuario {
 		System.out.println("Decida cuantos numeros desea pedir: ");
 		int pedir = sc.nextInt();
 		
-		//Pedimos 4 numeros
+		//Bucle de los numeros solicitados
 		
 		for (int i = 1; i <= pedir; i++) {
 			System.out.println("Introduce el numero " + i + " : ");
