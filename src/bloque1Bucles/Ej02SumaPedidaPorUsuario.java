@@ -24,6 +24,8 @@ public class Ej02SumaPedidaPorUsuario {
 			}
 		}
 		
+		//Suma
+		
 		System.out.println("La suma de los numeros mayores que 10 es: " + suma);
 		
 		sc.close();
