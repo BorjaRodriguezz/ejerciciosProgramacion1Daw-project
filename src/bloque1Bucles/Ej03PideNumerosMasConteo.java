@@ -38,7 +38,7 @@ public class Ej03PideNumerosMasConteo {
 		System.out.println("\nRESULTADOS");
 		System.out.println("Numeros postivos: " + positivos);
 		System.out.println("Numeros negativos: " + negativos);
-		System.out.println("Veces que salio el 0: " + neutro);
+		System.out.println("Veces que ha salido el 0: " + neutro);
 		
 		
 		sc.close();
