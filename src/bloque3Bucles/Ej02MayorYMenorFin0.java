@@ -19,7 +19,7 @@ public class Ej02MayorYMenorFin0 {
 		
 		//BUCLE WHILE
 		
-		while (true) {
+		for (; true;) {
 			numero = sc.nextInt();
 			
 			if (numero == 0) {

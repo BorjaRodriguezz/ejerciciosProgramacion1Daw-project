@@ -2,7 +2,7 @@ package bloque3Bucles;
 
 import java.util.Scanner;
 
-public class Ej01 {
+public class Ej01SumaYMediaFin0 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -15,9 +15,9 @@ public class Ej01 {
 		
 		System.out.println("Introduce numeros (introduzca 0 para terminar): ");
 		
-		//BUCLE WHILE
+		//BUCLE
 		
-		while (true) {
+		for (; true;) {
 			numero = sc.nextInt();
 			
 			if (numero == 0) {
