@@ -1,4 +1,4 @@
-package bloque1Bucles;
+package bloque1BucleFor;
 
 import java.util.Scanner;
 

@@ -1,19 +1,17 @@
-package bloque1Bucles;
+package bloque1BucleFor;
 
 import java.util.Scanner;
 
-public class Ej02SumaPedidaPorUsuario {
+public class Ej01Suma4NumerosMayores {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
 		int suma = 0;
-		System.out.println("Decida cuantos numeros desea pedir: ");
-		int pedir = sc.nextInt();
 		
-		//Bucle de los numeros solicitados
+		//Pedimos 4 numeros
 		
-		for (int i = 1; i <= pedir; i++) {
+		for (int i = 1; i<= 4; i++) {
 			System.out.println("Introduce el numero " + i + " : ");
 			int numero = sc.nextInt();
 			
