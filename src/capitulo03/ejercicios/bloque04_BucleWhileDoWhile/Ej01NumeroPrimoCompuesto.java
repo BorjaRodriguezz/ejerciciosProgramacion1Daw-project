@@ -17,6 +17,7 @@ public class Ej01NumeroPrimoCompuesto {
 		
 		if (numero <= 1) {
 			esPrimo = false;
+			System.out.println("Los números iguales o menores que 1 no pueden ser primos");
 		} else {
 			while (divisor <= numero / 2) {
 				if (numero % divisor == 0) {
