@@ -1,4 +1,4 @@
-package Bloque04_BucleWhileDoWhile;
+package bloque04_BucleWhileDoWhile;
 
 import java.util.Scanner;
 

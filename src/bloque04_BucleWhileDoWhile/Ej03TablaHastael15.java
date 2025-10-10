@@ -1,4 +1,4 @@
-package Bloque04_BucleWhileDoWhile;
+package bloque04_BucleWhileDoWhile;
 
 public class Ej03TablaHastael15 {
 
