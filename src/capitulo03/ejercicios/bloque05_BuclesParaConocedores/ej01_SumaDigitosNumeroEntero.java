@@ -13,7 +13,7 @@ public class ej01_SumaDigitosNumeroEntero {
 		
 		
 		//SOLICITO NUMERO
-		System.out.println("\nIntroduce un numero: ");
+		System.out.println("\nIntroduce un número: ");
 		int numero = sc.nextInt();
 		int numOriginal = numero;
 		
@@ -24,7 +24,7 @@ public class ej01_SumaDigitosNumeroEntero {
 			numero = numero / 10;
 		}
 		
-		System.out.println("\nLa suma de digitos del numero " + numOriginal + " es: " + suma);
+		System.out.println("\nLa suma de dígitos del número " + numOriginal + " es: " + suma);
 		
 		sc.close();
 
