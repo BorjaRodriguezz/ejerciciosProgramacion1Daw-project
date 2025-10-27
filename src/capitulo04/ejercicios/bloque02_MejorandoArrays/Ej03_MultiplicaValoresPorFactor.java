@@ -33,17 +33,17 @@ public class Ej03_MultiplicaValoresPorFactor {
 	}
 	
 	//Método para mostrar array
-		public static void mostrarArray(int[] array) {
-			for (int i = 0; i < array.length; i++) {
-				System.out.print(array[i] + " ");
-			}
-			System.out.println();
+	public static void mostrarArray(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + " ");
 		}
-		
-		public static void multiplicaValoresPorFactor(int a[], int factor) {
-			for (int i = 0; i < a.length; i++) {
-				a[i] = a[i] * factor;
-			}
+		System.out.println();
+	}
+	
+	public static void multiplicaValoresPorFactor(int a[], int factor) {
+		for (int i = 0; i < a.length; i++) {
+			a[i] = a[i] * factor;
 		}
+	}
 
 }
