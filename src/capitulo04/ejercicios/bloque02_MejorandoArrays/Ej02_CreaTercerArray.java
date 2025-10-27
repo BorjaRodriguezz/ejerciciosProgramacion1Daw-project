@@ -24,8 +24,10 @@ public class Ej02_CreaTercerArray {
 		System.out.println("\nArray 2: ");
 		mostrarArray(array2);
 		
+		int[] array3 = creaTercerArray(array1, array2);
 		
-		
+		System.out.println("\nArray 3: ");
+		mostrarArray(array3);
 		
 		
 
@@ -37,6 +39,20 @@ public class Ej02_CreaTercerArray {
 			System.out.print(array[i] + " ");
 		}
 		System.out.println();
+	}
+	
+	//Método para crear tercer array
+	public static int[] creaTercerArray(int a1[], int a2[]) {
+		int[] a3 = new int[a1.length];
+		
+		for (int i = 0; i < a3.length; i++) {
+			if (i % 2 == 0) {
+				a3[i] = a2[i]; //Indices pares del segundo array
+			} else {
+				a3[i] = a1[i]; //Indices impares del primer array
+			}
+		}
+		return a3;
 	}
 
 }
