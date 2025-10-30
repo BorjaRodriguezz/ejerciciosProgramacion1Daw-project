@@ -40,6 +40,7 @@ public class Ej03_MultiplicaValoresPorFactor {
 		System.out.println();
 	}
 	
+	//Método para multiplicar valores por factor
 	public static void multiplicaValoresPorFactor(int a[], int factor) {
 		for (int i = 0; i < a.length; i++) {
 			a[i] = a[i] * factor;
