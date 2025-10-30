@@ -18,9 +18,11 @@ public class Ej02_ContadorVocalConsonante {
 	
 	//Método para contar vocales
 	public static void contVocales (String cadena) {
+		//Contadores
 		int vocales = 0;
 		int consonantes = 0;
 		
+		//Bucle para que cuente cada letra y sepa si es vocal o consonante
 		for (int i = 0; i < cadena.length(); i++) {
 			int codigo = (int) cadena.charAt(i);
 			if(codigo >= 65 && codigo <= 122) {
@@ -32,6 +34,7 @@ public class Ej02_ContadorVocalConsonante {
 			}
 		}
 		
+		//Resultado
 		System.out.println("Número de vocales: " + vocales);
 		System.out.println("Número de vocales: " + consonantes);
 	}
