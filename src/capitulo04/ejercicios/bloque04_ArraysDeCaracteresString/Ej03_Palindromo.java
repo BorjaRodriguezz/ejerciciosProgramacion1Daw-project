@@ -26,15 +26,19 @@ public class Ej03_Palindromo {
 	
 	//Método para saber si la palabra es palíndromo
 	public static boolean palindromo(String cadena) {
-		//volvemos todas las letras minúsculas
-		cadena = cadena.toLowerCase().replace(" "," ");
-		
 		int i = 0;
 		int j = cadena.length() - 1;
 		
 		//Comprobamos si las letras coinciden
 		while (i < j) {
-			if (cadena.charAt(i) != cadena.charAt(j)) {
+			char ci = cadena.charAt(i);
+			char cj = cadena.charAt(j);
+			
+			//Convertimos todo en minuscula porque sino no detecta que sea igual
+			if (ci >= 'A' && ci <= 'Z') ci += 32;
+			if (cj >= 'A' && cj <= 'Z') cj += 32;
+			
+			if (ci != cj) {
 				return false; //Si no coinciden las letras, no es
 			}
 			i++;
