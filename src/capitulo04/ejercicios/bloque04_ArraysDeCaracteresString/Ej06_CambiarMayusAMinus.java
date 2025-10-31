@@ -1,3 +1,4 @@
+package capitulo04.ejercicios.bloque04_ArraysDeCaracteresString;
 import java.util.Scanner;
 
 public class Ej06_CambiarMayusAMinus {
