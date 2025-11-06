@@ -13,19 +13,39 @@ public class Ej02_Anagrama {
 		System.out.println("Introduce palabra: ");
 		String pal2 = sc.nextLine();
 		
+		//Aplicamos los métodos
+		String min1 = cambiaMayusMinus(pal1);
+		String min2 = cambiaMayusMinus(pal2);
 		
+		boolean esAnagrama = anagrama(min1, min2);
+		
+		//Resultado
+		if (esAnagrama) {
+			System.out.println("\nEs un anagrama.");
+		} else {
+			System.out.println("\nNo es un anagrama.");
+		}
+		
+		sc.close();
 	}
 	
 	//Método para saber si es un anagrama
-	public static boolean anagrama(String pal1, String pal2) 
+	public static boolean anagrama(String pal1, String pal2) {
 		//Si no miden lo mismo ya no pueden tener los mismo caracteres
-		if (pal1.length() != pal2.length()) {
-			return false;
-		}
+		if (pal1.length() != pal2.length()) return false;
 		
 		for (int i = 0; i < pal1.length(); i++) {
 			char c1 = pal1.charAt(i);
+			
+			//Esto es para la segunda palabra
+			int pos = pal2.indexOf(c1);
+			
+			//Si no esta la letra devolvemos falso
+			if (pos == -1) return false;
 		}
+		
+		//Si todas coinciden
+		return true;
 	}
 
 	//Método para cambiar de mayuscula a minuscula
