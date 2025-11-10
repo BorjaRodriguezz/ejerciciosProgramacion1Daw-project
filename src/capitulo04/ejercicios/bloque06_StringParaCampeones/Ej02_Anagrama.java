@@ -40,8 +40,16 @@ public class Ej02_Anagrama {
 			//Esto es para la segunda palabra
 			int pos = pal2.indexOf(c1);
 			
-			//Si no esta la letra devolvemos falso
+			//Si no está la letra devolvemos falso
 			if (pos == -1) return false;
+			
+			//Bucle para la segunda palabra igual
+			for (int j = 0; j < pal2.length(); j++) {
+				char c2 = pal2.charAt(j);
+				
+				pos = pal1.indexOf(c2);
+				if (pos == -1) return false;
+			}
 		}
 		
 		//Si todas coinciden
