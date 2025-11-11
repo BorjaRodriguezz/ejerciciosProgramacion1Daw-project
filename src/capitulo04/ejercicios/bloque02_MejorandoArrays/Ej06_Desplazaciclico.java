@@ -31,7 +31,8 @@ public class Ej06_Desplazaciclico {
 		
 		System.out.println("\nArray deesplazado a la derecha: ");
 		mostrarArray(numeros);
-
+		
+		sc.close();
 	}
 	
 	// Muestra el contenido de un array

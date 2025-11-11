@@ -26,7 +26,8 @@ public class Ej05_DesplazaCiclicoDerecha2 {
 		
 		System.out.println("\nArray deesplazado a la derecha: ");
 		mostrarArray(numeros);
-
+		
+		sc.close();
 	}
 	
 	// Muestra el contenido de un array

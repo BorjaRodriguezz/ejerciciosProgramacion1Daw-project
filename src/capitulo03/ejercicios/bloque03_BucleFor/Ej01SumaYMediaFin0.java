@@ -36,8 +36,7 @@ public class Ej01SumaYMediaFin0 {
 			System.out.println("\nValor no valido.");
 		}
 		
-		sc.close();
-
+		
 	}
 
 }
