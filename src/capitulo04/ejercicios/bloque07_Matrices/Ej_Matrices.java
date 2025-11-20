@@ -183,6 +183,8 @@ public class Ej_Matrices {
         Scanner sc = new Scanner(System.in);
         System.out.print("Introduce el número de fila a eliminar (0-4): ");
         int f = sc.nextInt();
+        
+        sc.close();
 
         if (f < 0 || f >= m.length) {
             System.out.println("Fila fuera de rango.");
