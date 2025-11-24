@@ -1,6 +1,6 @@
 package capitulo04.ejercicios.bloque11_PorEntretenernosUnRato;
 
-public class Ej01_GeneraPrimitiva {
+public class Ej05_GeneraPrimitiva {
 
 	public static void main(String[] args) {
 		int[] primitiva = new int[7];
@@ -16,7 +16,15 @@ public class Ej01_GeneraPrimitiva {
 			primitiva[i] = num;
 		}
 		
-
+		//Ordenamos los primeros 6 números del array
+		ordBurbuja(primitiva);
+		
+		//Mostramos el boleto sacado
+		System.out.print("Combinación: ");
+		for (int i = 0; i < primitiva.length - 1; i++) {
+			System.out.print(primitiva[i] + " ");
+		}
+		System.out.println("\nComplementario: " + primitiva[6]);
 	}
 	
 	//Método para que no se repitan números
@@ -29,7 +37,7 @@ public class Ej01_GeneraPrimitiva {
 	
 	//Método para ordenar en burbuja
 	public static void ordBurbuja(int[] a) {
-		int n = a.length;
+		int n = a.length - 1; //Para que no ordene el último número generado
 		boolean intercambio;
 		
 		//bucle para ordenar el array
