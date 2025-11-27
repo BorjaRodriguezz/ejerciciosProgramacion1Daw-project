@@ -131,7 +131,7 @@ public class Metodos {
 	    
 	    // MÉTODO MATRICES
 	    
-	    // Método para rellenar matriz con num aleatorios
+	    // Método para rellenar matriz con num aleatorios sin repetirlos
 	    public int[][] matrizSinRepetidos() {
 	        int[][] m = new int[6][10];
 	        boolean[] usado = new boolean[1001];
@@ -150,5 +150,70 @@ public class Metodos {
 	        }
 	        return m;
 	    }
+	    
+	    // Imprimir matriz
+	    public void imprimirMatriz(int[][] m) {
+	        for (int[] fila : m) {
+	            for (int n : fila) {
+	                System.out.printf("%4d ", n);
+	            }
+	            System.out.println();
+	        }
+	    }
+	    
+	    // Obtener max de una matriz
+	    public int maximo(int[][] m) {
+	        int max = m[0][0];
+
+	        for (int[] fila : m) {
+	            for (int n : fila) {
+	                if (n > max) max = n;
+	            }
+	        }
+	        return max;
+	    }
+	    
+	    // Obtener min de una matriz
+	    public int minimo(int[][] m) {
+	        int min = m[0][0];
+
+	        for (int[] fila : m) {
+	            for (int n : fila) {
+	                if (n < min) min = n;
+	            }
+	        }
+	        return min;
+	    }
+	    
+	    // Buscar posicion de num en una matriz
+	    public String posicionEnMatriz(int[][] m, int valor) {
+	        for (int i = 0; i < m.length; i++) {
+	            for (int j = 0; j < m[i].length; j++) {
+	                if (m[i][j] == valor) {
+	                    return "Fila " + i + ", Columna " + j;
+	                }
+	            }
+	        }
+	        return "No encontrado";
+	    }
+	    
+	    // MÉTODOS APARTE
+	    
+	    // Numeros primos
+	    public boolean esPrimo(int n) {
+	        if (n <= 1) return false;
+
+	        for (int i = 2; i <= Math.sqrt(n); i++) {
+	            if (n % i == 0) return false;
+	        }
+	        return true;
+	    }
+	    
+	    // Saber si una letra es vocal
+	    public boolean esVocal(char c) {
+	        c = Character.toLowerCase(c);
+	        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
+	    }
+
 
 	}
