@@ -87,5 +87,68 @@ public class Metodos {
 	        }
 	        return (double) suma / array.length;
 	    }
+	    
+	    //Método para buscar un número
+	    public boolean contiene(int[] arr, int valor) {
+	        for (int n : arr) {
+	            if (n == valor) return true;
+	        }
+	        return false;
+	    }
+
+	    // Contar repeticiones
+	    public int contar(int[] arr, int valor) {
+	        int contador = 0;
+
+	        for (int n : arr) {
+	            if (n == valor) contador++;
+	        }
+	        return contador;
+	    }
+	    
+	    // Devolver la posicion de un número
+	    public int buscarPosicion(int[] arr, int valor) {
+	        for (int i = 0; i < arr.length; i++) {
+	            if (arr[i] == valor) return i;
+	        }
+	        return -1;
+	    }
+	    
+	    // eliminar un número de un array
+	    public int[] removeInteger(int[] arr, int valor) {
+	        int rep = contar(arr, valor);
+	        int[] nuevo = new int[arr.length - rep];
+
+	        int pos = 0;
+	        for (int n : arr) {
+	            if (n != valor) {
+	                nuevo[pos] = n;
+	                pos++;
+	            }
+	        }
+	        return nuevo;
+	    }
+	    
+	    // MÉTODO MATRICES
+	    
+	    // Método para rellenar matriz con num aleatorios
+	    public int[][] matrizSinRepetidos() {
+	        int[][] m = new int[6][10];
+	        boolean[] usado = new boolean[1001];
+
+	        for (int i = 0; i < 6; i++) {
+	            for (int j = 0; j < 10; j++) {
+
+	                int num;
+	                do {
+	                    num = (int)(Math.random() * 1001);
+	                } while (usado[num]);
+
+	                usado[num] = true;
+	                m[i][j] = num;
+	            }
+	        }
+	        return m;
+	    }
 
 	}
