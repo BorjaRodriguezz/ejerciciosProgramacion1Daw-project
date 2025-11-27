@@ -1,4 +1,4 @@
-package cursosOnline.cursoMouredvJava;
+package cursosOnline.cursoMouredvJava.introduccion;
 
 public class Ej_Operadores {
 
