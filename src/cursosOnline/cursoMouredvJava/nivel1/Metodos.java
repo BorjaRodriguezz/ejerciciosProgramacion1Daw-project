@@ -1,4 +1,4 @@
-package cursosOnline.cursoMouredvJava;
+package cursosOnline.cursoMouredvJava.nivel1;
 
 public class Metodos {
 
